@@ -1,0 +1,52 @@
+{
+  "name": "partial-stream",
+  "version": "0.0.0",
+  "license": "ISC",
+  "description": "Extract the first part of a stream based on a separator",
+  "keywords": [],
+  "homepage": "https://github.com/julien-f/js-partial-stream",
+  "bugs": "https://github.com/julien-f/js-partial-stream/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julien-f/js-partial-stream.git"
+  },
+  "author": {
+    "name": "Julien Fontanet",
+    "email": "julien.fontanet@isonoe.net"
+  },
+  "preferGlobal": false,
+  "main": "dist/",
+  "bin": {},
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "babel-runtime": "^5.8.3",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.3",
+    "babel-eslint": "^3.1.26",
+    "clarify": "^1.0.5",
+    "mocha": "^2.2.5",
+    "must": "^0.12.0",
+    "read-all-stream": "^3.0.1",
+    "source-map-support": "^0.3.2",
+    "standard": "^4.5.4",
+    "trace": "^1.2.0"
+  },
+  "scripts": {
+    "build": "babel --source-maps --out-dir=dist/ src/",
+    "dev": "babel --watch --source-maps --out-dir=dist/ src/",
+    "lint": "standard",
+    "prepublish": "npm run build",
+    "test": "npm run lint && mocha --opts .mocha.opts \"dist/**/*.spec.js\"",
+    "test-dev": "mocha --opts .mocha.opts --watch --reporter=min \"dist/**/*.spec.js\""
+  },
+  "standard": {
+    "ignore": [
+      "dist/**"
+    ],
+    "parser": "babel-eslint"
+  }
+}
