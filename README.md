@@ -12,11 +12,11 @@ Installation of the [npm package](https://npmjs.org/package/partial-stream):
 
 ## Usage
 
+In this example, the header section of an HTTP response is extracted from the raw response.
+
 ```javascript
 import partialStream from 'partial-stream'
 
-// In this example, the headers of an HTTP response is extracted from
-// the content.
 const contentStream = rawHttpResponse
   .pipe(partialStream('\r\n\r\n', headers => {
     console.log(headers)
