@@ -60,4 +60,4 @@ You may:
 
 ## License
 
-${pkg.license} © [Julien Fontanet](https://github.com/julien-f)
+ISC © [Julien Fontanet](https://github.com/julien-f)
