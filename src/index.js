@@ -9,7 +9,7 @@ const [
   const {toString} = Object.prototype
   const _ = ref => {
     ref = toString.call(ref)
-    return val =>(toString.call(val) === ref)
+    return val => toString.call(val) === ref
   }
 
   return [
@@ -55,7 +55,7 @@ const passThrough = (chunk, callback) => {
 }
 
 export default function partialStream (matcher, cb) {
-  let handler = () => {
+  let handler = (() => {
     let head = ''
     const indexer = makeIndexer(matcher)
 
@@ -78,7 +78,7 @@ export default function partialStream (matcher, cb) {
         callback()
       }
     }
-  }()
+  })()
 
   return through2((chunk, _, callback) => {
     // callback(null, chunk)
