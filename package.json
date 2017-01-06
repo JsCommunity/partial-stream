@@ -37,7 +37,7 @@
     "mocha": "^3.0.0",
     "must": "^0.13.1",
     "nyc": "^10.0.0",
-    "promise-toolbox": "^0.7.0",
+    "promise-toolbox": "^0.8.0",
     "read-all-stream": "^3.0.1",
     "source-map-support": "^0.4.0",
     "standard": "^8.0.0",
