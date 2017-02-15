@@ -33,7 +33,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "clarify": "^2.0.0",
     "dependency-check": "^2.5.1",
-    "ghooks": "^1.2.1",
+    "husky": "^0.13.1",
     "mocha": "^3.0.0",
     "must": "^0.13.1",
     "nyc": "^10.0.0",
@@ -45,6 +45,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production babel --source-maps --out-dir=dist/ src/",
+    "commitmsg": "npm test",
     "depcheck": "dependency-check ./package.json",
     "dev": "babel --watch --source-maps --out-dir=dist/ src/",
     "dev-test": "mocha --opts .mocha.opts --watch --reporter=min \"dist/**/*.spec.js\"",
@@ -64,10 +65,5 @@
       "dist"
     ],
     "parser": "babel-eslint"
-  },
-  "config": {
-    "ghooks": {
-      "commit-msg": "npm test"
-    }
   }
 }
