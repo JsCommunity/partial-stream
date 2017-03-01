@@ -1,8 +1,4 @@
-/* eslint-env mocha */
-
-import expect from 'must'
-
-// ===================================================================
+/* eslint-env jest */
 
 import through2 from 'through2'
 import readAllStream from 'read-all-stream'
@@ -25,8 +21,8 @@ describe('partialStream', () => {
     const stream = input.pipe(partialStream('\n\n', resolve))
 
     return Promise.all([
-      head.then(value => expect(value).to.equal('foo\nbar')),
-      readAllStream(stream).then(value => expect(value).to.equal('baz'))
+      head.then(value => expect(value).toEqual('foo\nbar')),
+      readAllStream(stream).then(value => expect(value).toEqual('baz'))
     ])
   })
 
@@ -42,8 +38,8 @@ describe('partialStream', () => {
     const stream = input.pipe(partialStream(/\n{2}/, resolve))
 
     return Promise.all([
-      head.then(value => expect(value).to.equal('foo\nbar')),
-      readAllStream(stream).then(value => expect(value).to.equal('baz'))
+      head.then(value => expect(value).toEqual('foo\nbar')),
+      readAllStream(stream).then(value => expect(value).toEqual('baz'))
     ])
   })
 })
