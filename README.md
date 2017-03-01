@@ -1,4 +1,4 @@
-# partial-stream [![Build Status](https://travis-ci.org/julien-f/js-partial-stream.png?branch=master)](https://travis-ci.org/julien-f/js-partial-stream)
+# partial-stream [![Build Status](https://travis-ci.org/JsCommunity/partial-stream.png?branch=master)](https://travis-ci.org/JsCommunity/partial-stream)
 
 > Extract the first part of a stream based on a separator
 
@@ -51,7 +51,7 @@ the code.
 
 You may:
 
-- report any [issue](https://github.com/julien-f/js-partial-stream/issues)
+- report any [issue](https://github.com/JsCommunity/partial-stream/issues)
   you've encountered;
 - fork and create a pull request.
 

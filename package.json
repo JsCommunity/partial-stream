@@ -4,11 +4,11 @@
   "license": "ISC",
   "description": "Extract the first part of a stream based on a separator",
   "keywords": [],
-  "homepage": "https://github.com/julien-f/js-partial-stream",
-  "bugs": "https://github.com/julien-f/js-partial-stream/issues",
+  "homepage": "https://github.com/JsCommunity/partial-stream",
+  "bugs": "https://github.com/JsCommunity/partial-stream/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/julien-f/js-partial-stream.git"
+    "url": "https://github.com/JsCommunity/partial-stream.git"
   },
   "author": {
     "name": "Julien Fontanet",
